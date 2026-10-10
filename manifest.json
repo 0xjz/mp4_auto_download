@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Auto MP4 Downloader",
+  "version": "0.1.0",
+  "description": "활성화 시 감지되는 직접 mp4 파일을 Downloads 하위 서브폴더에 자동 저장합니다.",
+  "permissions": [
+    "webRequest",
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Auto MP4 Downloader"
+  }
+}
